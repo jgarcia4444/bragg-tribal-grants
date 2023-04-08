@@ -1,7 +1,6 @@
-
 .carouselImg {
     animation-name: FadeIn;
-    animation-duration: 400ms;
+    animation-duration: 500ms;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
