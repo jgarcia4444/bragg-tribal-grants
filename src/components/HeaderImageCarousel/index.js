@@ -27,7 +27,10 @@ const HeaderImageCarousel = () => {
     }
 
     useEffect(() => {
-        setInterval(handleImageChange, 5000);
+        let transitionTimeout = setInterval(handleImageChange, 5000);
+        return () => {
+            window.clearInterval(transitionTimeout);
+        }
     })
 
     return (
