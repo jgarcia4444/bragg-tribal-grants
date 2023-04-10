@@ -10,14 +10,14 @@ const OurServices = () => {
     ];
 
     const renderServices = () => {
-        return services.map((service, i) => <li className="text-white font-bold text-xl" key={`${i}-${service}`}>{service}</li>)
+        return services.map((service, i) => <li className="font-bold text-xl text-white" key={`${i}-${service}`}>{service}</li>)
     }
 
     return (
-        <div className=" mt-12 w-full relative flex flex-col justify-center align-middle p-2">
-            <h2 className="mb-4 font-bold text-4xl text-center text-white">Our Services</h2>
-            <div className="w-full">
-                <ul className="list-disc w-1/2 m-auto">
+        <div className=" mt-20 relative w-1/2 m-auto">
+            <h2 className="text-white mb-4 font-bold text-4xl text-center">Our Services</h2>
+            <div className="">
+                <ul className="list-disc w-full">
                     {renderServices()}
                 </ul>
             </div>
