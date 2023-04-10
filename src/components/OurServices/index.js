@@ -14,7 +14,7 @@ const OurServices = () => {
     }
 
     return (
-        <div className=" mt-20 relative w-1/2 m-auto">
+        <div className="relative w-1/2 h-1/2 m-auto flex justify-center flex-col">
             <h2 className="text-orange-900 mb-6 font-bold text-5xl text-center">Our Services</h2>
             <div className="">
                 <ul className="list-disc w-full">

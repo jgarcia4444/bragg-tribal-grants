@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ButtonContainer = ({children, bgColor}) => {
+const ButtonContainer = ({text, bgColor, to}) => {
 
     const configuredBgColor = () => {
         switch(bgColor) {
@@ -15,9 +15,13 @@ const ButtonContainer = ({children, bgColor}) => {
     }
 
     return (
-        <div className={`shadow rounded ${configuredBgColor()} text-gray-200 hover:text-white hover:cursor-pointer font-bold text-xl text-center w-full mt-8 mx-auto py-3`}>
-            {children}
-        </div>
+        <a href={to}>
+            <div className={`shadow rounded ${configuredBgColor()} text-gray-200 hover:text-white hover:cursor-pointer font-bold text-xl text-center w-full mt-8 mx-auto py-3`}>
+                {text}
+            </div>
+        </a>
+            
+        
     )
 };
 
