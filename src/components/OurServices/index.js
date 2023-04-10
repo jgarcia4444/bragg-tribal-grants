@@ -10,12 +10,12 @@ const OurServices = () => {
     ];
 
     const renderServices = () => {
-        return services.map((service, i) => <li className="font-bold text-xl text-white" key={`${i}-${service}`}>{service}</li>)
+        return services.map((service, i) => <li className=" text-orange-900 font-bold text-xl mb-4" key={`${i}-${service}`}>{service}</li>)
     }
 
     return (
         <div className=" mt-20 relative w-1/2 m-auto">
-            <h2 className="text-white mb-4 font-bold text-4xl text-center">Our Services</h2>
+            <h2 className="text-orange-900 mb-6 font-bold text-5xl text-center">Our Services</h2>
             <div className="">
                 <ul className="list-disc w-full">
                     {renderServices()}
