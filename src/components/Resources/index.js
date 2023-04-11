@@ -5,10 +5,10 @@ import Resource from './Resource';
 const Resources = () => {
 
     const resources = [
-        {content: "Helping sole proprietors or partnerships as they grow.", img: ""},
-        {content: "", img: ""},
-        {content: "", img: ""},
-        {content: "", img: ""}
+        {content: "Helping businesses that start out as sole proprietors or partnerships as they grow.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPUiQNx3mVAQLBFpMYpHdExhT92Kd9hMfmQ&usqp=CAU"},
+        {content: "Grants for nonprofits, small businesses and individuals to develop a marketing strategy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjNdYifFQgHAQiyJuak-hquyU9-mawe0YKQ&usqp=CAU"},
+        {content: "Joints ventures are available for affordable housing, construction loans, healthcare centures and commercial real estate", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqElt4Nusf_UpptFIMCE79Tg3Ui-VQKpce3w&usqp=CAU"},
+        {content: "Farm Loan Programs are available to family-size farmers and ranchers to “start, improve, expand, transition, market, and strengthen  operations", img: "https://static01.nyt.com/images/2022/08/31/dining/31gardens-1/29gardens-1-videoSixteenByNine3000.jpg"}
     ]
 
     const renderResources = () => {
@@ -18,7 +18,7 @@ const Resources = () => {
     return (
         <div className="">
             <h2 className="text-blue-950 mb-6 font-bold text-5xl text-center">Resources</h2>
-            <div className="flex flex-row flex-wrap w-full">
+            <div className=" mt-10 flex flex-row flex-wrap w-full">
                 {renderResources()}
             </div>
         </div>
