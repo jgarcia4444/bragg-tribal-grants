@@ -1,25 +1,26 @@
 import React from 'react'
+import VerticalCard from '../Cards/VerticalCard';
 
 const OurServices = () => {
 
     const services = [
-        "Business Loans for Corporations",
-        "Grant Writing",
-        "Secure the capital necessary to start or grow business",
-        "Capital needed to establish good business credit"
+        {content: "Business Loans for Corporations", img: "https://www.incimages.com/uploaded_files/image/1920x1080/business-loan-illustration-1940x900_35212.jpg"},
+        {content: "Grant Writing", img: "https://www.ed2go.com/common/images/1/18680.jpg"},
+        {content: "Secure the capital necessary to start or grow business", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegHb6QtkdWTO1TP6Y8vBm9YjyTq_YTxNFwQ&usqp=CAU"},
+        {content: "Capital needed to establish good business credit", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc7d8PsRIRSV8j5A0GUYhCtPGqjZi2RckTYg&usqp=CAU"}
     ];
 
     const renderServices = () => {
-        return services.map((service, i) => <li className=" text-orange-900 font-bold text-xl mb-4" key={`${i}-${service}`}>{service}</li>)
+        return services.map((service, i) => <VerticalCard info={service} txtColor={'orange'} key={`${i}-${service.content}`} />)
     }
 
     return (
-        <div className="relative w-1/2 h-1/2 m-auto flex justify-center flex-col">
+        <div className="w-full my-20 mx-auto flex justify-center flex-col">
             <h2 className="text-orange-900 mb-6 font-bold text-5xl text-center">Our Services</h2>
             <div className="">
-                <ul className="list-disc w-full">
+                <div className="w-full flex flex-row flex-wrap">
                     {renderServices()}
-                </ul>
+                </div>
             </div>
         </div>
     )

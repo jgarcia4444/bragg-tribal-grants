@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Resource from './Resource';
+import VerticalCard from '../Cards/VerticalCard';
 
 const Resources = () => {
 
@@ -12,7 +13,7 @@ const Resources = () => {
     ]
 
     const renderResources = () => {
-        return resources.map((info, i) => <Resource key={`${i}-${info.content}`} info={info} />)
+        return resources.map((info, i) => <VerticalCard txtColor={'blue'} key={`${i}-${info.content}`} info={info} />)
     }
 
     return (
