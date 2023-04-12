@@ -15,7 +15,7 @@ const OurServices = () => {
     }
 
     return (
-        <div className="w-full my-20 mx-auto flex justify-center flex-col">
+        <div className="w-full mx-auto flex justify-center flex-col lg:my-20 sm: mt-48">
             <h2 className="text-orange-900 mb-6 font-bold text-5xl text-center">Our Services</h2>
             <div className="">
                 <div className="w-full flex flex-row flex-wrap">

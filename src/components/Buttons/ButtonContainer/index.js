@@ -15,7 +15,7 @@ const ButtonContainer = ({text, bgColor, to}) => {
     }
 
     return (
-        <a className={`shadow rounded ${configuredBgColor()} bg-opacity-80 text-gray-200 hover:text-white hover:cursor-pointer font-bold text-xl text-center lg:w-2/5 md:w-2/5 mt-8 py-3`} href={to}>
+        <a className={`shadow lg:rounded md:rounded ${configuredBgColor()} bg-opacity-80 text-gray-200 hover:text-white hover:cursor-pointer font-bold text-xl text-center lg:w-2/5 md:w-2/5 mt-8 py-3`} href={to}>
             {text}
         </a>
             
