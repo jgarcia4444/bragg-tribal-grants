@@ -9,7 +9,7 @@ const Header = () => {
             <HeaderImageCarousel />
             <div className="flex flex-col justify-center lg:mt-20 md:mt-20">
                 <div className="headerContent bg-orange-900 bg-opacity-50 p-4 rounded shadow lg:w-3/4 md:w-3/4 sm:w-3/4 self-center">
-                    <h1 className="mb-2 text-white lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-bold ">Tribal Grants</h1>
+                    <h1 className="mb-2 text-white lg:text-6xl md:text-5xl sm:text-4xl text-4xl font-bold ">Songaa Grants</h1>
                     <p className="mt-2 text-white lg:text-2xl md:text-xl text-lg font-bold">Bringing federal funds to tribes to supply help where it is needed.</p>
                 </div>
                 <div className="lg:w-3/4 md:w-3/4 sm:w-3/4 self-center headerCta flex lg:flex-row md:flex-row sm:flex-col w-full flex-col justify-between mt-28">
