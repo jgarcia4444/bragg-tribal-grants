@@ -8,7 +8,7 @@ const Schedule = () => {
             <h2 className="text-blue-950 font-bold text-5xl text-center">Schedule</h2>
             <p className="text-blue-950 font-bold ml-14">Use the calendly feature below to set up a 30 minute call.</p>
             <InlineWidget
-                url='https://calendly.com/jgarciadev4444' 
+                url='https://calendly.com/danielbraggteam' 
                 styles={{overflowY: 'hidden', height: '90vh'}}
             />
         </div>
