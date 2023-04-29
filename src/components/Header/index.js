@@ -5,7 +5,7 @@ import ButtonContainer from '../Buttons/ButtonContainer';
 const Header = () => {
 
     return (
-        <div className="w-full lg:h-1/2 md:h-1/2 h-2/5 flex flex-col justify-top">
+        <div id="header" className="w-full lg:h-1/2 md:h-1/2 h-2/5 flex flex-col justify-top">
             <HeaderImageCarousel />
             <div className="flex flex-col justify-center lg:mt-20 md:mt-20">
                 <div className="headerContent bg-orange-900 bg-opacity-50 p-4 rounded shadow lg:w-3/4 md:w-3/4 sm:w-3/4 self-center">
