@@ -17,8 +17,8 @@ const Resources = () => {
     }
 
     return (
-        <div className="">
-            <h2 className="text-blue-950 mb-6 font-bold text-5xl text-center">Resources</h2>
+        <div className="md:px-4">
+            <h2 className="text-blue-950 mb-6 font-bold text-5xl text-center md:text-left">Resources</h2>
             <div className=" mt-10 flex flex-row flex-wrap w-full">
                 {renderResources()}
             </div>

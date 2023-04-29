@@ -15,12 +15,10 @@ const OurServices = () => {
     }
 
     return (
-        <div className="w-full mx-auto flex justify-center flex-col lg:my-20 sm: mt-48">
-            <h2 className="text-orange-900 mb-6 font-bold text-5xl text-center">Our Services</h2>
-            <div className="">
-                <div className="w-full flex flex-row flex-wrap">
-                    {renderServices()}
-                </div>
+        <div className="w-full mx-auto flex justify-center flex-col lg:my-20 sm: mt-48 md:px-4">
+            <h2 className="text-orange-900 mb-6 font-bold text-5xl text-center md:text-left">Our Services</h2>
+            <div className="w-full flex flex-row flex-wrap ">
+                {renderServices()}
             </div>
         </div>
     )

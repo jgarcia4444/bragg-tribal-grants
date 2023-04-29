@@ -17,9 +17,9 @@ const VerticalCard = ({info, txtColor}) => {
 
     return (
         <div className="lg:w-1/2 md:w-1/2 sm:w-full sm:mb-12 flex flex-col justify-start mb-12">
-            <div className="lg:w-3/4 md:w-3/4 lg:mx-auto md:mx-auto  sm:w-screen">
+            <div className="lg:w-3/4 md:w-3/4 lg:mx-auto md:mx-auto w-full">
                 <img className="lg:rounded lg:h-48 lg:w-full md:h-48 md:w-full md:rounded sm:w-screen w-screen" src={img} alt="Resource example"/>
-                <p className={`font-bold font-sans text-xl ${configureTxtProperties()}`}>{content}</p>
+                <p className={`font-bold font-sans text-xl mx-2 md:mx-0 ${configureTxtProperties()}`}>{content}</p>
             </div>
         </div>
     )
