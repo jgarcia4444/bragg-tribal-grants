@@ -31,7 +31,7 @@ const Navbar = () => {
     },[lastScrolly])
 
     return (
-        <div className={`opacity-0 ${showNav === true ? "fixed opacity-100" : ""} top-0 left-0 w-full flex flex-row shadow z-10 bg-white transition-all duration-1000`}>
+        <div className={`opacity-0 ${showNav === true ? "opacity-100" : ""} fixed top-0 left-0 w-full flex flex-row shadow z-10 bg-white transition-all duration-1000`}>
             <div className="w-1/3">
                 <a href="#header" >
                     <img src={logo} alt="" className="rounded w-1/4 m-2" />

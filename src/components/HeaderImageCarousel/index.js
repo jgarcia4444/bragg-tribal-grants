@@ -23,7 +23,7 @@ const HeaderImageCarousel = () => {
 
     const renderImage = () => {
         let src = imgs[imageIndex];
-        return <HeaderImage src={src} />
+        return <HeaderImage key={src} src={src} />
     }
 
     useEffect(() => {
