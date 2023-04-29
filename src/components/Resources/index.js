@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Resource from './Resource';
 import VerticalCard from '../Cards/VerticalCard';
 
 const Resources = () => {
