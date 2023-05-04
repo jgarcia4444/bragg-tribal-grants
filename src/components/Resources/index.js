@@ -1,4 +1,5 @@
 import React from 'react';
+import {FiEdit, FiUser, FiFileText} from 'react-icons/fi'
 
 import VerticalCard from '../Cards/VerticalCard';
 
@@ -15,11 +16,25 @@ const Resources = () => {
         return resources.map((info, i) => <VerticalCard txtColor={'blue'} key={`${i}-${info.content}`} info={info} />)
     }
 
+    const renderList = () => {
+        let listItems = [{text: "Grant Writing", icon: <FiEdit color={"#fff"} size={64}/>}, {text: "Grant Consulting", icon: <FiUser color={"#fff"} size={64}/>}, {text: "Business Planning", icon: <FiFileText color={"#fff"} size={64}/>}];
+        return listItems.map((listItem, i) => (
+            <div key={`${i}-${listItem.text}`} className="w-1/3 flex flex-col items-center justify-center h-64">
+                <div className=" w-32 h-32 border-4 border-white rounded-full flex items-center justify-center">
+                    {listItem.icon}
+                </div>
+                <p className="text-white text-xl font-bold mt-4">{listItem.text}</p>
+                
+            </div>
+        ))
+    }
+
     return (
-        <div className="md:px-4">
-            <h2 className="text-blue-950 mb-6 font-bold text-3xl md:text-5xl text-center md:text-left">Resources</h2>
-            <div className=" mt-10 flex flex-row flex-wrap w-full">
-                {renderResources()}
+        <div className="md:px-4 my-16">
+            <h2 className="text-blue-950  font-bold text-3xl md:text-5xl text-center md:text-left">What We Do</h2>
+            <div className=" flex flex-row flex-wrap w-full bg-blue-950 rounded py-8">
+                {/* {renderResources()} */}
+                {renderList()}
             </div>
         </div>
     )

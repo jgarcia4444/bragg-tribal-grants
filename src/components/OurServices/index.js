@@ -14,11 +14,23 @@ const OurServices = () => {
         return services.map((service, i) => <VerticalCard info={service} txtColor={'orange'} key={`${i}-${service.content}`} />)
     }
 
+    const renderLis = () => {
+        let lis = ["Lack of Housing", "Lack of Funding", "Lack of Education", "Lack of Health Services", "Lack of Entrepreneurs", "Substance Abuse", "Lack of Income Opportunities"];
+        return lis.map((text, i) => <li className="w-1/2 text-xl font-bold text-white" key={`${i}-${text}`}>{text}</li>)
+    }
+
     return (
-        <div className="w-full mx-auto flex justify-center flex-col lg:my-20 sm: md:mt-48 mt-12 md:px-4">
-            <h2 className="text-orange-900 mb-6 font-bold text-3xl md:text-5xl text-center md:text-left">Our Services</h2>
-            <div className="w-full flex flex-row flex-wrap ">
-                {renderServices()}
+        <div className="w-full mx-auto flex justify-center flex-col lg:my-20 md:mt-48 mt-12 md:px-4">
+            <h2 className="text-orange-900 font-bold text-3xl md:text-5xl text-center md:text-left">Is Your Tribe Dealing With the Following?</h2>
+            <div className="w-full flex flex-row flex-wrap bg-orange-800 items-center justify-center rounded">
+                {/* {renderServices()} */}
+                <ul className="list-disc list-inside w-full flex flex-row flex-wrap px-4 py-10">
+                    {renderLis()}
+                </ul>
+            </div>
+            <div className="w-full flex flex-row items-center justify-center mt-4">
+                <p className="text-orange-900 text-2xl font-bold w-1/2">Billions of dollars are available in grants specifically set aside for tribes.</p>
+                <img className="w-1/2" src="https://www.gallerysystems.com/wp-content/uploads/Grants_2022_Blog.jpg  " alt="" />
             </div>
         </div>
     )
