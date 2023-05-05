@@ -30,7 +30,7 @@ const OurServices = () => {
             </div>
             <div className="w-full flex flex-row flex-wrap items-center justify-center mt-4">
                 <p className="text-orange-900 text-2xl font-bold md:w-1/2 w-full text-center mb-4 md:mb-0">Billions of dollars are available in grants specifically set aside for tribes.</p>
-                <img className="w-1/2" src="https://www.gallerysystems.com/wp-content/uploads/Grants_2022_Blog.jpg  " alt="" />
+                <img className="w-1/2 rounded" src="https://www.collegegrant.net/wp-content/uploads/young-pair-of-native-americans.png" alt="" />
             </div>
         </div>
     )

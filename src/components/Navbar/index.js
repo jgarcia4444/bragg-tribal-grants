@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-import logo from '../../media/logo/logo.png';
+import logo from '../../media/logo/logo-2.png';
 import ButtonContainer from '../Buttons/ButtonContainer';
 
 const Navbar = () => {
@@ -11,9 +11,9 @@ const Navbar = () => {
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
             let {scrollY} = window;
-            if (scrollY > 450) {
+            if (scrollY > 400) {
                 setShowNav(true);
-            } else if (scrollY < 451) {
+            } else if (scrollY < 401) {
                 setShowNav(false);
             } 
             setLastScrolY(window.scrollY);
