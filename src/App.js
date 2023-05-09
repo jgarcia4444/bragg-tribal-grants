@@ -5,6 +5,7 @@ import OurServices from './components/OurServices';
 import Resources from './components/Resources';
 import Schedule from './components/Schedule';
 import Navbar from './components/Navbar';
+import Partners from './components/Partners';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <OurServices />
       <Resources />
+      <Partners />
       <Schedule />
     </div>
   );
