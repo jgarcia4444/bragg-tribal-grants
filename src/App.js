@@ -6,6 +6,7 @@ import Resources from './components/Resources';
 import Schedule from './components/Schedule';
 import Navbar from './components/Navbar';
 import Partners from './components/Partners';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Resources />
       <Partners />
       <Schedule />
+      <Contact />
     </div>
   );
 }
