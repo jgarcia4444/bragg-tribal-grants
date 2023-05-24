@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { FiCalendar, FiPhone } from 'react-icons/fi';
 
 import logo from '../../media/logo/logo-2.png';
 import ButtonContainer from '../Buttons/ButtonContainer';
@@ -37,9 +38,9 @@ const Navbar = () => {
                     <img src={logo} alt="" className="rounded w-1/4 m-2" />
                 </a>
             </div>
-            <div className="w-2/3 flex flex-row items-center justify-end pr-6 gap-4">
-                <ButtonContainer text="Call (760) 409-6073" bgColor={'green'} to={"tel:7604096073"} />
-                <ButtonContainer text="Schedule Time" to="#schedule" bgColor={'blue'}/>
+            <div className="w-2/3 flex flex-row items-center justify-center pr-6 gap-0 sm:gap-4">
+                <ButtonContainer icon={<FiPhone color={"#fff"} size={24} className="block sm:hidden" />} text="Call (760) 409-6073" bgColor={'green'} to={"tel:7604096073"} />
+                <ButtonContainer icon={<FiCalendar color={"#fff"} size={24} className="block sm:hidden" />} text="Schedule Time" to="#schedule" bgColor={'blue'}/>
             </div>
         </div>
     )
