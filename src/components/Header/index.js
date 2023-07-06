@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import {FiCalendar, FiPhone} from 'react-icons/fi'
+
 import HeaderImageCarousel from '../HeaderImageCarousel';
 import ButtonContainer from '../Buttons/ButtonContainer';
 
@@ -25,8 +27,8 @@ const Header = () => {
                     <p className="text-white lg:text-2xl md:text-xl text-base font-light md:font-bold">Bringing Tribal Set Aside Funds to Help Your Tribe Where Needed</p>
                 </div>
                 <div className="sm:w-3/4  headerCta flex md:flex-row sm:flex-col w-full flex-col justify-between ">
-                    <ButtonContainer to={"tel:7604096073"} bgColor={'green'} text={"Call Now (760) 409-6073"} />
-                    <ButtonContainer to={"#schedule"} text={"Schedule Time"} bgColor={"blue"} />
+                    <ButtonContainer icon={<FiPhone color={"#fff"} size={24} />} to={"tel:7604096073"} bgColor={'green'} text={"Call Now (760) 409-6073"} />
+                    <ButtonContainer icon={<FiCalendar color={"#fff"} size={24}/>} to={"#schedule"} text={"Schedule Time"} bgColor={"blue"} />
                 </div>
             </div>
         </div>

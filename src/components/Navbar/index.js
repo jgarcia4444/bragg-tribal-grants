@@ -12,9 +12,9 @@ const Navbar = () => {
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
             let {scrollY} = window;
-            if (scrollY > 400) {
+            if (scrollY > 375) {
                 setShowNav(true);
-            } else if (scrollY < 401) {
+            } else if (scrollY < 376) {
                 setShowNav(false);
             } 
             setLastScrolY(window.scrollY);
@@ -38,9 +38,9 @@ const Navbar = () => {
                     <img src={logo} alt="" className="rounded w-1/4 m-2" />
                 </a>
             </div>
-            <div className="w-2/3 flex flex-row items-center justify-center pr-6 gap-0 sm:gap-4">
-                <ButtonContainer icon={<FiPhone color={"#fff"} size={24} className="block sm:hidden" />} text="Call (760) 409-6073" bgColor={'green'} to={"tel:7604096073"} />
-                <ButtonContainer icon={<FiCalendar color={"#fff"} size={24} className="block sm:hidden" />} text="Schedule Time" to="#schedule" bgColor={'blue'}/>
+            <div className="w-2/3 flex flex-row items-center justify-center pr-6 gap-0">
+                <ButtonContainer icon={<FiPhone color={"#fff"} size={24} className="block md:hidden " />} text="Call (760) 409-6073" bgColor={'green'} to={"tel:7604096073"} />
+                <ButtonContainer icon={<FiCalendar color={"#fff"} size={24} className="block md:hidden " />} text="Schedule Time" to="#schedule" bgColor={'blue'}/>
             </div>
         </div>
     )

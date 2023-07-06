@@ -15,12 +15,15 @@ const ButtonContainer = ({text, bgColor, to, icon}) => {
     }
 
     return (
-        <a className={`shadow rounded ${configuredBgColor()} bg-opacity-80 text-gray-200 hover:text-white hover:cursor-pointer font-bold text-xs sm:text-base lg:text-xl text-center w-1/5 lg:w-2/5 md:w-2/5 transition-all py-3 mx-auto flex items-center justify-center `} href={to}>
-            <p className="hidden sm:block">{text}</p>
-            {icon}
+        <a className={`shadow rounded ${configuredBgColor()} bg-opacity-80 text-gray-200 hover:text-white hover:cursor-pointer font-bold text-xs sm:text-base lg:text-xl text-center w-3/5 lg:w-2/5 md:w-2/5 transition-all py-3 mx-auto flex items-center justify-center mb-4 md:mb-0`} href={to}>
+            <p className="hidden md:block">{text}</p>
+            <div className="md:hidden block">
+                {icon}
+            </div>
         </a>
         
     )
+    // wdf
 };
 
 export default ButtonContainer;
